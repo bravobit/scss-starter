@@ -1,0 +1,44 @@
+//
+// Placeholder mixin.
+// Sets the placeholder for all vendor-prefixes.
+//
+// How to use: `@include placeholder { color: red; };`
+//
+
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+//
+// Keyframes mixin.
+// Sets the keyframe for all vendor-prefixes.
+//
+// How to use: `@include keyframes(slide) { color: red; };`
+//
+
+@mixin keyframes($animation-name) {
+    @keyframes #{$animation-name} { @content; }
+    @-o-keyframes #{$animation-name} { @content; }
+    @-ms-keyframes #{$animation-name} { @content; }
+    @-moz-keyframes #{$animation-name} { @content; }
+    @-webkit-keyframes #{$animation-name} { @content; }
+}
+
+//
+// Animation mixin.
+// Sets the animation for all vendor-prefixes.
+//
+// How to use: `@include animation('slide 5s 3');`
+//
+
+@mixin animation($animation) {
+    animation: #{$animation};
+    -o-animation: #{$animation};
+    -ms-animation: #{$animation};
+    -moz-animation: #{$animation};
+    -webkit-animation: #{$animation};
+}

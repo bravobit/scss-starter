@@ -1,0 +1,29 @@
+.row {
+    &:before, &:after { content: ''; display: table; }
+    &:after { clear: both; }
+}
+
+.row, .column { box-sizing: border-box; }
+
+.column {
+    float: left;
+    display: block;
+    position: relative;
+
+    & + .column {
+        margin-left: 0;
+
+        @include device(tablet) { margin-left: 1.6%; }
+    }
+}
+
+@for $index from 1 through 12 {
+    .column--#{$index} {
+        float: none;
+        width: auto;
+
+        @include device(tablet) {
+            width: 100% / 12 * $index;
+        }
+    }
+}

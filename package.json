@@ -1,0 +1,15 @@
+{
+    "name": "@bravobit/scss-starter",
+    "version": "1.0.0",
+    "description": "The simple SCSS starter",
+    "repository": "https://github.com/Bravobit/scss-starter.git",
+    "author": "Stan van Heumen <stan@bravobit.nl>",
+    "license": "MIT",
+    "scripts": {
+        "compile": "node-sass src/styles.scss dist/styles.css --output-style compressed --source-map dist",
+        "compile:watch": "node-sass src/styles.scss dist/styles.css --watch --output-style compressed --source-map dist"
+    },
+    "devDependencies": {
+        "node-sass": "^4.5.3"
+    }
+}

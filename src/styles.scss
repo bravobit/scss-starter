@@ -1,0 +1,24 @@
+//
+// styles.scss
+//
+// All the files should be defined here.
+//
+//
+// Variables: Global variables, colors and fonts.
+//
+@import './variables/colors';
+@import './variables/fonts';
+@import './variables/global';
+//
+// Mixins: Device, positioning, vendor and helpers.
+//
+@import './mixins/device';
+@import './mixins/positioning';
+@import './mixins/vendor';
+@import './mixins/helpers';
+//
+// Generic: Normalize and resets.
+//
+@import './generic/normalize';
+@import './generic/resets';
+@import './generic/grid';

@@ -1,0 +1,46 @@
+//
+// Position mixin.
+// This mixin is an easy way to set the position of an element.
+//
+// How to use: `@include position(absolute, top 100% left 0);`
+//
+
+@mixin position($position, $arguments) {
+    @each $object in top right bottom left {
+        $index: index($arguments, $object);
+        @if $index and $index + 1 <= length($arguments) and type-of(nth($arguments, $index + 1)) == number {
+            #{$object}: nth($arguments, $index + 1);
+        }
+    }
+    position: $position;
+}
+
+//
+// Absolute positioning helper mixin.
+//
+// How to use: `@include absolute(top 100% left 0);`
+//
+
+@mixin absolute($arguments: '') {
+    @include position(absolute, $arguments);
+}
+
+//
+// Fixed positioning helper mixin.
+//
+// How to use: `@include fixed(top 0 left 0);`
+//
+
+@mixin fixed($arguments: '') {
+    @include position(fixed, $arguments);
+}
+
+//
+// Relative positioning helper mixin.
+//
+// How to use: `@include relative;`
+//
+
+@mixin relative($arguments: '') {
+    @include position(relative, $arguments);
+}
