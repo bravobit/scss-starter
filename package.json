@@ -1,10 +1,28 @@
 {
     "name": "@bravobit/scss-starter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "The simple SCSS starter",
-    "repository": "https://github.com/Bravobit/scss-starter.git",
-    "author": "Stan van Heumen <stan@bravobit.nl>",
     "license": "MIT",
+    "keywords": [
+        "css",
+        "scss",
+        "compiled-css",
+        "library",
+        "web",
+        "starter"
+    ],
+    "author": {
+        "name": "Stan van Heumen <stan@bravobit.nl>",
+        "url": "https://www.linkedin.com/in/stan-van-heumen-86b4ab10a"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Bravobit/scss-starter.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Bravobit/scss-starter.git/issues"
+    },
+    "homepage": "https://github.com/Bravobit/scss-starter#readme",
     "scripts": {
         "compile": "node-sass src/styles.scss dist/styles.css --output-style compressed --source-map dist",
         "compile:watch": "node-sass src/styles.scss dist/styles.css --watch --source-map dist"
