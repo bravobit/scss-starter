@@ -24,26 +24,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 html, html a {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
-body {
-    background-color: #d5dae6;
+body { background-color: #d5dae6; }
+
+body, button, input, optgroup, select, textarea {
+    margin: 0;
     font-size: $base-font-size;
-    font-family: $base-font-family;
     font-weight: $base-font-weight;
     line-height: $base-line-height;
-}
-
-body, input, button, textarea {
-    font-size: $base-font-size;
     font-family: $base-font-family;
 }
 
@@ -92,6 +85,9 @@ label {
 }
 
 hr {
+    height: 0;
     margin: 40px 0;
+    overflow: visible;
+    box-sizing: content-box;
     border-top: 2px solid #caced1;
 }

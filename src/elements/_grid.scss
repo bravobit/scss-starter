@@ -1,0 +1,29 @@
+//
+// Usage:
+//
+// .row: A row with a gutter.
+// .row--simple Removes the gutter of the row.
+// .column--[1-12] The column 1 through 12.
+//
+
+.row:before, .row:after { content: ''; display: table; clear: both; }
+
+[class*="column--"] { width: 100%; }
+
+@include device(tablet) {
+    [class*="column--"] {
+        float: left;
+
+        .row:not(.row--simple) > & {
+            padding-right: 20px;
+
+            &:last-of-type { padding-right: 0; }
+        }
+    }
+
+    @for $index from 1 through 12 {
+        .column--#{$index} {
+            width: 100% / 12 * $index;
+        }
+    }
+}
