@@ -11,11 +11,11 @@ You can install this package locally with npm or yarn.
 ```bash
 # To get the latest stable version
 
-npm install @bravobit/scss-starter --save
+npm install @bravobit/scss-starter --save-dev
 
 # or
 
-yarn add @bravobit/scss-starter
+yarn add @bravobit/scss-starter --dev
 ```
 
 ### <a name="usage"></a> Usage
