@@ -17,7 +17,7 @@ $breakpoints: (
 // Device media query mixin.
 // This generates a media query for a breakpoint that is in the breakpoints list.
 //
-// How to use: `@include device(tablet) { @content; };`
+// How to use: `@include device(tablet) { @content; }`
 //
 
 @mixin device($width, $type: min) {
