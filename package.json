@@ -24,8 +24,8 @@
     },
     "homepage": "https://github.com/bravobit/scss-starter#readme",
     "scripts": {
-        "compile": "node-sass src/styles.scss dist/styles.css --output-style compressed --source-map dist",
-        "compile:watch": "node-sass src/styles.scss dist/styles.css --watch --output-style compressed --source-map dist"
+        "build": "node-sass src/styles.scss dist/styles.css --output-style compressed --source-map dist",
+        "build:watch": "node-sass src/styles.scss dist/styles.css --watch --output-style compressed --source-map dist"
     },
     "devDependencies": {
         "node-sass": "^4.5.3"
