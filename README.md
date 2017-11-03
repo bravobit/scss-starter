@@ -20,7 +20,7 @@ yarn add @bravobit/scss-starter
 
 ### <a name="usage"></a> Usage
 
-If you want to use the mixins and are working in an `.scss` file You should import our `styles.scss` file into your project to get the full product.
+If you want to use the mixins and are working in a `.scss` file You should import our `styles.scss` file into your project to get the full product.
 
 ```scss
 @import '~@bravobit/scss-starter/src/styles.scss';
@@ -36,7 +36,7 @@ If you want to include our default styling in your HTML you can use the compiled
 
 ### <a name="build-simple"></a> Simple
 
-If you want to create the css file yourself you can run one simple command to build the project.
+If you want to create the CSS file yourself you can run one simple command to build the project.
 
 ```bash
 npm run compile
