@@ -1,8 +1,24 @@
 # `@bravobit/scss-starter`
 
-This NPM dependency contains css-resets, standard variables and it also contains mixins to help you develop your web project.
+> CSS-resets, standard variables and it also contains mixins to help you develop your web project.
 
-## <a name="get-started"></a> Get Started
+- Use <kbd>command</kbd> + <kbd>F</kbd> or <kbd>ctrl</kbd> + <kbd>F</kbd> to search for a keyword.
+- Contributions welcome, please see [contribution guide](CONTRIBUTING.md).
+
+## Contents
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Mixins](#mixins)
+  - [Device](#mixins-device)
+  - [Positioning](#mixins-positioning)
+  - [Prefixing](#mixins-prefixing)
+- [Build](#build)
+  - [Once](#build-once)
+  - [Watch](#build-watch)
+- [License](#license)
+
+## <a name="getting-started"></a> Getting Started
 ### <a name="installation"></a> Installation
 
 You can install this package locally with npm or yarn. You should install the latest stable version in the `devDependencies` section in your `package.json`.
@@ -32,7 +48,7 @@ If you want to include our default styling in your HTML you can use the compiled
 ```
 
 ## <a name="mixins"></a> Mixins
-### <a name="mixin-device"></a> Device
+### <a name="mixins-device"></a> Device
 
 Do you want to use media queries for different device-sizes in your project, use the `device` mixin.
 
@@ -44,7 +60,7 @@ Do you want to use media queries for different device-sizes in your project, use
 }
 ```
 
-### <a name="mixin-positioning"></a> Positioning
+### <a name="mixins-positioning"></a> Positioning
 
 If you want an easy way to set the position of the element use the `position` mixin.
 
@@ -64,7 +80,7 @@ Or you can use one of the helper mixins (`relative`, `absolute`, `fixed`).
 }
 ```
 
-### <a name="mixin-prefixing"></a> Prefixing
+### <a name="mixins-prefixing"></a> Prefixing
 
 Do you want your animations and/or placeholder to work on every browser, use the `prefix` mixins.
 
@@ -75,7 +91,7 @@ Do you want your animations and/or placeholder to work on every browser, use the
 ```
 
 ## <a name="build"></a> Build
-### <a name="build-single"></a> Single
+### <a name="build-once"></a> Once
 
 If you want to create the CSS file yourself you can run one simple command to build the project.
 
@@ -90,3 +106,6 @@ If you want to make modifications to the project you can use the watch command t
 ```bash
 npm run build:watch
 ```
+
+## License
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
