@@ -1,0 +1,21 @@
+//
+// Z-index types.
+//
+
+$z-indexes: (
+);
+
+//
+// Z-index function.
+// This generates a the corresponding z-index for the given keyword that is in the z-indexes list.
+//
+// How to use: `@include z-index('keyword');`
+//
+
+@mixin z-index($keyword) {
+    @if index($z-indexes, $keyword) {
+        z-index: (length($z-indexes) - index($z-indexes, $keyword)) + 1;
+    } @else {
+        @error 'There is no item "#{$keyword}" in this list; choose one of: #{$z-indexes}';
+    }
+}

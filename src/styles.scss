@@ -10,9 +10,10 @@
 @import 'variables/fonts';
 @import 'variables/global';
 //
-// Mixins: Device, positioning, vendor and helpers.
+// Mixins: Device, z-index, positioning, vendor and helpers.
 //
 @import 'mixins/device';
+@import 'mixins/z-index';
 @import 'mixins/positioning';
 @import 'mixins/vendor';
 @import 'mixins/helpers';

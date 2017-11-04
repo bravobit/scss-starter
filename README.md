@@ -11,8 +11,11 @@
   - [Usage](#usage)
 - [Mixins](#mixins)
   - [Device](#mixins-device)
+  - [Z-index](#mixins-z-index)
   - [Positioning](#mixins-positioning)
   - [Prefixing](#mixins-prefixing)
+- [Elements](#elements)
+  - [Grid](#elements-grid)
 - [Build](#build)
   - [Once](#build-once)
   - [Watch](#build-watch)
@@ -60,6 +63,20 @@ Do you want to use media queries for different device-sizes in your project, use
 }
 ```
 
+### <a name="mixins-z-index"></a> Z-index
+
+You should add your z-index items to the `$z-indexes` list to keep the layers organized, then use the `z-index` mixin.
+
+```scss
+$z-indexes: (
+    'header',
+    'footer'
+);
+
+.header { @include z-index('header'); }
+.footer { @include z-index('footer'); }
+```
+
 ### <a name="mixins-positioning"></a> Positioning
 
 If you want an easy way to set the position of the element use the `position` mixin.
@@ -88,6 +105,27 @@ Do you want your animations and/or placeholder to work on every browser, use the
 @include placeholder { color: red; };
 @include keyframes(slide) { color: red; };
 @include animation('slide 5s 3');
+```
+
+## <a name="elements"></a> Elements
+### <a name="elements-grid"></a> Grid
+
+You can use the 12-column grid system by using the following classes:
+
+```html
+<div class="row">
+    <div class="column--8"></div>
+    <div class="column--4"></div>
+</div>
+
+<div class="row">
+    <div class="column--2"></div>
+    <div class="column--2"></div>
+    <div class="column--2"></div>
+    <div class="column--2"></div>
+    <div class="column--2"></div>
+    <div class="column--2"></div>
+</div>
 ```
 
 ## <a name="build"></a> Build
