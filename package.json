@@ -2,7 +2,7 @@
     "name": "@bravobit/scss-starter",
     "version": "1.0.3",
     "description": "The simple SCSS starter",
-    "license": "MIT",
+    "license": "CC0-1.0",
     "keywords": [
         "css",
         "scss",
@@ -25,9 +25,10 @@
     "homepage": "https://github.com/bravobit/scss-starter#readme",
     "scripts": {
         "build": "node-sass src/styles.scss dist/styles.css --output-style compressed --source-map dist",
-        "build:watch": "node-sass src/styles.scss dist/styles.css --watch --output-style compressed --source-map dist"
+        "build:watch": "node-sass src/styles.scss dist/styles.css --watch --output-style compressed --source-map dist",
+        "prepublish": "npm run build"
     },
     "devDependencies": {
-        "node-sass": "^4.5.3"
+        "node-sass": "^4.6.0"
     }
 }
