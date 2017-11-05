@@ -16,6 +16,7 @@
   - [Prefixing](#mixins-prefixing)
 - [Elements](#elements)
   - [Grid](#elements-grid)
+  - [Container](#elements-container)
 - [Build](#build)
   - [Once](#build-once)
   - [Watch](#build-watch)
@@ -126,6 +127,14 @@ You can use the 12-column grid system by using the following classes:
     <div class="column--2"></div>
     <div class="column--2"></div>
 </div>
+```
+
+### <a name="elements-container"></a> Container
+
+You should use the container element if you want to center some content with a fixed width (max: 1000px).
+
+```html
+<div class="container"></div>
 ```
 
 ## <a name="build"></a> Build
