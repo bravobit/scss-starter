@@ -29,6 +29,6 @@
         "prepublish": "npm run build"
     },
     "devDependencies": {
-        "node-sass": "^4.6.0"
+        "node-sass": "^4.7.1"
     }
 }

@@ -1,6 +1,9 @@
 # `@bravobit/scss-starter`
 
-> CSS-resets, standard variables and it also contains mixins to help you develop your web project.
+<p align="center">
+  <img height="46px" width="411px" src="https://raw.githubusercontent.com/bravobit/scss-starter/master/logo.png">
+  <p align="center">Simply CSS-resets, standard variables and it also contains mixins to help you develop your web project.</p>
+</p>
 
 - Use <kbd>command</kbd> + <kbd>F</kbd> or <kbd>ctrl</kbd> + <kbd>F</kbd> to search for a keyword.
 - Contributions welcome, please see [contribution guide](CONTRIBUTING.md).
