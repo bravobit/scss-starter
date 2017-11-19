@@ -41,7 +41,7 @@ body, button, input, optgroup, select, textarea {
 }
 
 a, a:visited {
-    color: $blue;
+    color: color('blue');
 }
 
 button {

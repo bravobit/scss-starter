@@ -1,6 +1,6 @@
 {
     "name": "@bravobit/scss-starter",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "The simple SCSS starter",
     "license": "CC0-1.0",
     "keywords": [
@@ -24,8 +24,8 @@
     },
     "homepage": "https://github.com/bravobit/scss-starter#readme",
     "scripts": {
-        "build": "node-sass src/styles.scss dist/styles.css --output-style compressed --source-map dist",
-        "build:watch": "node-sass src/styles.scss dist/styles.css --watch --output-style compressed --source-map dist",
+        "build": "node-sass src/all.scss dist/styles.css --output-style compressed --source-map dist",
+        "build:watch": "node-sass src/all.scss dist/styles.css --watch --output-style compressed --source-map dist",
         "prepublish": "npm run build"
     },
     "devDependencies": {

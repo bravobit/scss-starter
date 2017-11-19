@@ -25,7 +25,7 @@ code, kbd, samp { font-size: 1em; font-family: monospace, monospace; }
 
 dfn { font-style: italic; }
 
-mark { color: $black; background-color: $yellow; }
+mark { color: $black; background-color: color('yellow'); }
 
 small { font-size: 80%; }
 

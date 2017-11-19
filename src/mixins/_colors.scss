@@ -1,0 +1,22 @@
+//
+// Color function.
+// This generates a color for a given name that is in the colors list.
+//
+// How to use: `color: color('red', 400);`
+//
+
+@function color($name, $variant: '500') {
+    $map: map-get($colors, $name);
+    @if $map {
+        $color: map-get($map, $variant);
+        @if $color {
+            @return $color;
+        } @else {
+            @warn "The color name you entered was invalid $name, red was returned";
+            @return red;
+        }
+    } @else {
+        @warn "The color name you entered was invalid $name, red was returned";
+        @return red;
+    }
+}

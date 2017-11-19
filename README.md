@@ -15,6 +15,7 @@
   - [Z-index](#mixins-z-index)
   - [Positioning](#mixins-positioning)
   - [Prefixing](#mixins-prefixing)
+  - [Colors](#mixins-colors)
 - [Elements](#elements)
   - [Grid](#elements-grid)
   - [Container](#elements-container)
@@ -40,10 +41,19 @@ yarn add @bravobit/scss-starter --dev
 
 ### <a name="usage"></a> Usage
 
-If you want to use the mixins and are working in a `.scss` file You should import our `styles.scss` file into your project to get the full product.
+If you want to use the mixins and are working in a `.scss` file You should import our `all.scss` file into your project to get the full product.
 
 ```scss
-@import '~@bravobit/scss-starter/src/styles.scss';
+@import '~@bravobit/scss-starter/src/all.scss';
+```
+
+Or you can import all the files you want individually.
+
+```scss
+@import '~@bravobit/scss-starter/src/variables/_index.scss';
+@import '~@bravobit/scss-starter/src/mixins/_index.scss';
+@import '~@bravobit/scss-starter/src/generic/_index.scss';
+@import '~@bravobit/scss-starter/src/elements/_index.scss';
 ```
 
 If you want to include our default styling in your HTML you can use the compiled (and minified) version.
@@ -107,6 +117,17 @@ Do you want your animations and/or placeholder to work on every browser, use the
 @include placeholder { color: red; };
 @include keyframes(slide) { color: red; };
 @include animation('slide 5s 3');
+```
+
+### <a name="mixins-colors"></a> Colors
+
+Do you want to use colors in your project, use the `colors` function. To get a full list of the supported colors [click here](https://material.io/guidelines/style/color.html#color-color-palette).
+
+```scss
+.main {
+    color: color('yellow', 400);
+    background-color: color('red');
+}
 ```
 
 ## <a name="elements"></a> Elements
