@@ -1,5 +1,3 @@
-# `@bravobit/scss-starter`
-
 <p align="center">
   <img height="46px" width="411px" src="https://raw.githubusercontent.com/bravobit/scss-starter/master/logo.png">
   <p align="center">Simply CSS-resets, standard variables and it also contains mixins to help you develop your web project.</p>
